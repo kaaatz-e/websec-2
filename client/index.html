@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Карта погоды</title> 
+    <link rel="icon" href="image\thermometer.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="main-row">
+            <aside class="sidebar">
+                <h1>🌤 ПрогнозПогоды</h1>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Найти...">
+                    <button id="search-btn">
+                        <img src="image\loupe.png" alt="Иконка" width="25" height="25">
+                    </button>
+                </div>
+                <div id="search-results" class="search-results"></div>
+            </aside>
+            <div id="map" class="map-container"></div>
+        </div>
+        <div id="bottom-panel" class="bottom-panel">
+            <p style="text-align: center; margin-top: 20px;">Нажмите на маркер на карте, чтобы увидеть детальный прогноз погоды</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

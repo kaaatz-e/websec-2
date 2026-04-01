@@ -57,4 +57,3 @@ def prepare_data():
 
     print(f"Обработано записей: {len(settlements)}")
     print(f"Сохранено топ-{TOP_N} населённых пунктов в {OUTPUT_JSON}")
-            
